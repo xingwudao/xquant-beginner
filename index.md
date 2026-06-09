@@ -7,11 +7,13 @@ spec 与 notebook 不放在这里，统一维护在：
 
 `https://github.com/xingwudao/xquant-learning`
 
-课程与正式书信息：
+## 快速入口
 
-`https://xquant.shop/courses`
+- 课程与正式书信息：`https://xquant.shop/courses`
+- 读者群：添加作者微信 `xquanter`，备注 `XQuant 读者`
+- 配套练习：`https://github.com/xingwudao/xquant-learning`
+- 书稿反馈：`https://github.com/xingwudao/xquant-beginner/issues/new/choose`
 
-添加作者微信 `xquanter` 进入读者群。请备注：`XQuant 读者`。
 
 ## 开始阅读
 
