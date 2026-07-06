@@ -17,6 +17,40 @@ spec 与 notebook 不放在这里，统一维护在：
 
 添加作者微信 `xquanter` 进入读者群。请备注：`XQuant 读者`。
 
+## 作者与服务
+
+### 刑无刀
+
+本文作者 @刑无刀。《机器学习：实用案例解析》译者，《推荐系统》
+作者，极客时间《推荐系统 36 式》专栏作者，开源书《人人都是
+量化交易员》作者，15 年 AI 从业经验，贝壳（纽交所 + 港交所
+双重上市公司，股票代码 BEKE/2423）前技术总监。
+
+- 公众号：刑无刀
+- 小红书：刑无刀
+
+<img src="./book/images/home/xingwudao.jpg" alt="公众号：刑无刀" width="180">
+
+### MatrixSpk
+
+本文作者 @MatrixSpk，多年财务及投资经验，系北大 MBA，
+公众号「i锐角」主理人。
+
+- 公众号：i锐角
+
+<img src="./book/images/home/iruijiao.jpg" alt="公众号：i锐角" width="180">
+
+### XQuant-Shop
+
+XQuant-Shop 是面向全球个人投资者的一站式量化投资决策平台，
+简称 XQuant 平台。XQuant 平台集成标准化量化数据可视化看板、
+零门槛策略搭建工具与自动化工作流体系，帮助普通投资者快速搭建
+专属量化投资策略。
+
+- 服务号：XQuant-Shop
+
+<img src="./book/images/home/xquant-shop.jpg" alt="XQuant-Shop 服务号" width="180">
+
 ## 在线发布
 
 本仓库支持两种发布方式：
