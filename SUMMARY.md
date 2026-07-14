@@ -1,5 +1,8 @@
 # Summary
 
+> 最新书稿已更新至 [XQuant 量化课堂页](https://xquant.shop/courses)。
+> 想阅读最新版官方书稿，请前往图书页。
+
 * [项目首页](README.md)
 * [前言](book/preface.md)
 * [准备工作](book/getting-started.md)

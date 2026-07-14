@@ -1,5 +1,8 @@
 # XQuant Beginner
 
+> 最新书稿已更新至 [XQuant 量化课堂页](https://xquant.shop/courses)。
+> 想阅读最新版官方书稿，请前往图书页。
+
 《XQuant：人人都是量化交易员》开源书稿。
 
 本仓库存放可发布的书稿源码、图片和发布配置。书中配套的
