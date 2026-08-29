@@ -1,0 +1,9 @@
+{
+  "description": "向 example.py 中的 add 函数添加 docstring 和日志打印",
+  "files_to_modify": [
+    "example.py"
+  ],
+  "changes": {
+    "example.py": "def add(a, b):\n    '''返回参数 a 和 b 的和。'''\n    result = a + b\n    print(f\"[add] {a} + {b} = {result}\")\n    return result"
+  }
+}

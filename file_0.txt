@@ -1,0 +1,5 @@
+{
+  "description": "AI生成的解决方案（代码块提取）",
+  "files_to_modify": [],   // 空数组 → 没有文件
+  "changes": {}           // 空对象 → 没有实际更改
+}
