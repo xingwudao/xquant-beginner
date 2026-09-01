@@ -1,3 +1,8 @@
+---
+title: 量化交易入门准备工作：AI 编程工具与 Python 环境
+description: 从零准备量化交易自学环境：认识数据源、Python、Jupyter、AI 编程工具和 open-xquant，为后续策略回测实验搭好工作台。
+---
+
 # 准备工作
 
 > 最新书稿已更新至 [XQuant 量化课堂页](https://xquant.shop/courses)。

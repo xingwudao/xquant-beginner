@@ -1,12 +1,64 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig, type HeadConfig } from 'vitepress'
+
+const siteUrl = 'https://xingwudao.github.io/xquant-beginner/'
+const siteTitle = '量化交易入门：用 AI 和 Python 从零跑通策略回测'
+const siteDescription =
+  'XQuant Beginner 是面向零基础读者的量化交易自学开源书，带你用 AI 编程和 Python 从投资想法出发，完成数据获取、策略回测、风险评估、过拟合检查、交易执行和因子研究。'
+
+function pageToUrl(page: string) {
+  const route = page
+    .replace(/(^|\/)index\.md$/, '$1')
+    .replace(/\.md$/, '')
+    .replace(/README$/, 'README')
+
+  const path = route === '' ? '' : route
+  return new URL(path, siteUrl).href
+}
+
+function meta(name: string, content: string): HeadConfig {
+  return ['meta', { name, content }]
+}
+
+function property(property: string, content: string): HeadConfig {
+  return ['meta', { property, content }]
+}
 
 export default defineConfig({
   lang: 'zh-CN',
   title: 'XQuant Beginner',
-  description: '《XQuant：人人都是量化交易员》开源书稿',
+  titleTemplate: ':title | XQuant Beginner',
+  description: siteDescription,
   base: process.env.VITEPRESS_BASE || '/',
   cleanUrls: true,
   lastUpdated: true,
+  sitemap: {
+    hostname: siteUrl
+  },
+  head: [
+    meta('author', '刑无刀, MatrixSpk'),
+    meta('keywords', '量化交易入门, 量化交易自学, Python量化交易, AI量化交易, 策略回测, 因子研究, open-xquant'),
+    meta('theme-color', '#2563eb'),
+    property('og:site_name', 'XQuant Beginner'),
+    property('og:type', 'book'),
+    property('og:locale', 'zh_CN'),
+    property('og:title', siteTitle),
+    property('og:description', siteDescription),
+    property('og:url', siteUrl),
+    meta('twitter:card', 'summary'),
+    meta('twitter:title', siteTitle),
+    meta('twitter:description', siteDescription)
+  ],
+  transformHead({ page, title, description }) {
+    const url = pageToUrl(page)
+    return [
+      ['link', { rel: 'canonical', href: url }],
+      property('og:title', title || siteTitle),
+      property('og:description', description || siteDescription),
+      property('og:url', url),
+      meta('twitter:title', title || siteTitle),
+      meta('twitter:description', description || siteDescription)
+    ]
+  },
   themeConfig: {
     nav: [
       { text: '阅读', link: '/book/preface' },

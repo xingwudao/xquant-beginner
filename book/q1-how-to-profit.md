@@ -1,3 +1,8 @@
+---
+title: 量化交易入门第 1 章：用 Python 跑通第一个策略
+description: 面向零基础读者的第一个量化交易实验：获取 ETF 数据，写出定投和均线规则，用 Python 完成策略回测、基准对比、参数扫描和样本外验证。
+---
+
 # 第 1 章：跑通第一个策略
 
 > 最新书稿已更新至 [XQuant 量化课堂页](https://xquant.shop/courses)。

@@ -1,22 +1,68 @@
+---
+title: 量化交易入门：用 AI 和 Python 从零跑通策略回测
+description: XQuant Beginner 是面向零基础读者的量化交易自学开源书，带你用 AI 编程和 Python 从投资想法出发，完成数据获取、策略回测、风险评估、过拟合检查、交易执行和因子研究。
+---
+
 # XQuant Beginner
+
+《XQuant：人人都是量化交易员》开源书稿。
+
+这是一本面向零基础读者的量化交易入门书。它不要求你先成为
+程序员，也不要求你一开始就掌握复杂金融模型。你会用 AI 编程工具
+和 Python，把一个投资想法写成可执行规则，再通过数据、回测和复查
+判断它是否站得住。
+
+本书适合正在搜索“量化交易入门”“量化交易自学”“Python 量化回测”
+的读者。它的重点不是给你一个神奇策略，而是帮你建立一条能反复
+使用的研究路径：提出想法、写清规则、跑出结果、评估风险、怀疑结论、
+继续迭代。
 
 > 最新书稿已更新至 [XQuant 量化课堂页](https://xquant.shop/courses)。
 > 想阅读最新版官方书稿，请前往图书页。
 
-《XQuant：人人都是量化交易员》开源书稿。
+## 先从这里开始
 
-本仓库存放可发布的书稿源码、图片和发布配置。书中配套的
-spec 与 notebook 不放在这里，统一维护在：
+- [前言](book/preface.md)：理解这本书的学习路径
+- [准备工作](book/getting-started.md)：搭好 AI 编程工具和 Python 环境
+- [第 1 章：跑通第一个策略](book/q1-how-to-profit.md)：完成第一次策略回测
+
+完整目录见 [SUMMARY.md](SUMMARY.md)。
+
+## 你会学到什么
+
+- 如何把投资想法写成策略规格说明书，也就是 spec
+- 如何让 AI 辅助生成和运行 Python 量化代码
+- 如何获取 ETF 数据并完成第一个策略回测
+- 如何做基准对比、收益评估和风险评估
+- 如何识别过拟合、数据泄露和参数优化陷阱
+- 如何理解交易执行、监控诊断、策略迭代和因子研究
+
+## 课程结构
+
+- 准备工作：AI 编程工具和 Python 环境
+- 第 1 章：跑通第一个策略
+- 第 2 章：先选买什么：从 3 只 ETF 开始
+- 第 3 章：决定各买多少：3 种分法实测
+- 第 4 章：决定何时买卖：再平衡、止损、止盈
+- 第 5 章：判断策略好不好：4 个关键视角
+- 第 6 章：别高兴太早：防止过拟合
+- 第 7 章：从理想到现实：执行交易
+- 第 8 章：策略跑起来以后：监控、诊断、迭代
+- 第 9 章：持续寻找机会：因子研究入门
+
+## 配套资源
+
+本仓库存放可发布的书稿源码、图片和发布配置。书中配套的 spec 与
+notebook 不放在这里，统一维护在：
 
 `https://github.com/xingwudao/xquant-learning`
 
 ## 快速入口
 
 - 课程与正式书信息：`https://xquant.shop/courses`
-- 读者群：添加作者微信 `xquanter`，备注 `XQuant 读者`
 - 配套练习：`https://github.com/xingwudao/xquant-learning`
 - 书稿反馈：`https://github.com/xingwudao/xquant-beginner/issues/new/choose`
-
+- 读者群：添加作者微信 `xquanter`，备注 `XQuant 读者`
 
 ## 作者与服务
 
@@ -52,20 +98,6 @@ XQuant-Shop 是面向全球个人投资者的一站式量化投资决策平台�
 
 <img src="./book/images/home/xquant-shop.jpg" alt="XQuant-Shop 服务号" width="180">
 
-## 开始阅读
-
-- [前言](book/preface.md)
-- [准备工作](book/getting-started.md)
-- [第 1 章：跑通第一个策略](book/q1-how-to-profit.md)
-
-完整目录见 [SUMMARY.md](SUMMARY.md)。
-
-## 反馈与读者群
-
-- [提交书稿反馈](book/feedback.md)
-- [参与贡献说明](CONTRIBUTING.md)
-- 添加作者微信 `xquanter` 进入读者群
-
 ## 在线发布
 
 本仓库支持两种发布方式：
@@ -95,18 +127,6 @@ npm run docs:preview
 ```
 
 构建产物位于 `.vitepress/dist/`。
-
-## 配套练习仓库
-
-书中所有动手实验对应的 spec 和 notebook 位于：
-
-`https://github.com/xingwudao/xquant-learning`
-
-## 课程与正式书
-
-课程、正式书和后续更新会放在主站：
-
-`https://xquant.shop/courses`
 
 ## 许可证
 

@@ -6,7 +6,8 @@
   "scripts": {
     "docs:dev": "vitepress --host 0.0.0.0",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview --host 0.0.0.0"
+    "docs:preview": "vitepress preview --host 0.0.0.0",
+    "seo:check": "node scripts/check-seo.mjs"
   },
   "devDependencies": {
     "vitepress": "^1.6.4"

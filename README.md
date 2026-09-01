@@ -1,24 +1,87 @@
-# XQuant Beginner
-
-> 最新书稿已更新至 [XQuant 量化课堂页](https://xquant.shop/courses)。
-> 想阅读最新版官方书稿，请前往图书页。
+# 量化交易入门：XQuant Beginner
 
 《XQuant：人人都是量化交易员》开源书稿。
 
-本仓库存放可发布的书稿源码、图片和发布配置。书中配套的
-spec 与 notebook 不放在这里，统一维护在：
+这是一本面向零基础读者的量化交易自学开源书。你不需要先成为
+程序员，也不需要一开始就掌握复杂金融模型。本书会带你用 AI
+编程工具和 Python，把一个投资想法写成可执行规则，再用数据、
+回测和复查判断它是否站得住。
 
-`https://github.com/xingwudao/xquant-learning`
+核心目标很简单：从零跑通一条完整的量化研究路径。
 
-在线阅读：
+- 提出一个投资想法
+- 写成清楚的策略规格说明书，也就是 spec
+- 让 AI 辅助生成和运行 Python 代码
+- 获取数据并完成策略回测
+- 对比基准、评估收益和风险
+- 检查过拟合、数据泄露和参数幻觉
+- 逐步理解交易执行、监控迭代和因子研究
+
+## 在线阅读
+
+开源书稿在线阅读：
 
 `https://xingwudao.github.io/xquant-beginner/`
 
-课程与正式书信息：
+最新书稿已更新至 XQuant 量化课堂页。想阅读最新版官方书稿，
+请前往图书页：
 
 `https://xquant.shop/courses`
 
-添加作者微信 `xquanter` 进入读者群。请备注：`XQuant 读者`。
+课程、正式书和后续更新也会放在主站：
+
+`https://xquant.shop/courses`
+
+如果您不会写代码、不想阅读全书，也可以看看组合商店：
+
+`https://xquant.shop/products`
+
+## 适合谁
+
+本书主要适合三类读者：
+
+- 想入门量化交易，但不知道从哪里开始
+- 想自学 Python 量化，却被代码、环境和报错卡住
+- 看过很多策略文章，但还没有形成系统的回测和评估方法
+
+它不是“稳赚策略合集”，也不是高频交易教程。本书更关注普通投资者
+怎样用 AI、数据和清楚的实验流程，验证自己的投资想法。
+
+## 你会学到什么
+
+本书围绕 9 个问题展开：
+
+- 准备工作：AI 编程工具和 Python 环境怎么搭
+- 第 1 章：量化交易怎么赚钱，如何跑通第一个策略
+- 第 2 章：买什么，如何构建候选标的池
+- 第 3 章：买多少，如何做权重分配和仓位管理
+- 第 4 章：什么时候买卖，如何制定交易规则
+- 第 5 章：怎么知道策略有效，如何评估回测结果
+- 第 6 章：如何避免自欺欺人，如何识别过拟合
+- 第 7 章：如何真正执行，从回测走向交易
+- 第 8 章：如何持续改进，如何监控、诊断和迭代
+- 第 9 章：量化交易的日常是什么，如何入门因子研究
+
+完整目录见 `SUMMARY.md`。
+
+## 配套练习仓库
+
+本仓库存放可发布的书稿源码、图片和发布配置。
+
+书中配套的 spec 与 notebook 不放在这里，统一维护在：
+
+`https://github.com/xingwudao/xquant-learning`
+
+阅读正文时，如果看到类似 `q1-how-to-profit/specs/` 的路径，
+请到 `xquant-learning` 仓库中查看对应文件。
+
+## 快速入口
+
+- 在线阅读：`https://xingwudao.github.io/xquant-beginner/`
+- 课程与正式书信息：`https://xquant.shop/courses`
+- 配套练习：`https://github.com/xingwudao/xquant-learning`
+- 书稿反馈：`https://github.com/xingwudao/xquant-beginner/issues/new/choose`
+- 读者群：添加作者微信 `xquanter`，备注 `XQuant 读者`
 
 ## 作者与服务
 
@@ -61,22 +124,6 @@ XQuant-Shop 是面向全球个人投资者的一站式量化投资决策平台�
 - GitBook：通过 `.gitbook.yaml`、`README.md`、`SUMMARY.md` 同步发布
 - 静态网页：通过 VitePress 构建为纯静态站点
 
-## 本地阅读
-
-直接从 `SUMMARY.md` 开始阅读，或打开 `book/` 目录下的章节文件。
-
-## 反馈与读者群
-
-如果你发现错别字、概念不清或实验结果不一致，请提交 Issue：
-
-`https://github.com/xingwudao/xquant-beginner/issues/new/choose`
-
-参与反馈前建议阅读：
-
-`CONTRIBUTING.md`
-
-添加作者微信 `xquanter` 进入读者群。请备注：`XQuant 读者`。
-
 ## 本地预览静态站点
 
 先安装 Node.js，然后运行：
@@ -98,27 +145,25 @@ npm run docs:build
 npm run docs:preview
 ```
 
+检查 SEO 构建信号：
+
+```bash
+npm run seo:check
+```
+
 构建产物位于 `.vitepress/dist/`。
 
-## 配套练习仓库
+## 反馈与读者群
 
-书中所有动手实验对应的 spec 和 notebook 位于：
+如果你发现错别字、概念不清或实验结果不一致，请提交 Issue：
 
-`https://github.com/xingwudao/xquant-learning`
+`https://github.com/xingwudao/xquant-beginner/issues/new/choose`
 
-阅读正文时，如果看到类似 `q1-how-to-profit/specs/` 的路径，
-请到 `xquant-learning` 仓库中查看对应文件。
+参与反馈前建议阅读：
 
-## 课程与正式书
+`CONTRIBUTING.md`
 
-课程、正式书和后续更新会放在主站：
-
-`https://xquant.shop/courses`
-
-本仓库是开源书稿版本，用于公开阅读和收集反馈。正式书会在吸收
-开源反馈后整理为更稳定的版本。
-
-如果您不会写代码、不想阅读全书，不妨看看组合商店：`https://xquant.shop/products` 。
+添加作者微信 `xquanter` 进入读者群。请备注：`XQuant 读者`。
 
 ## 许可证
 
