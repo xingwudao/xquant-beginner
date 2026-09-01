@@ -1,4 +1,4 @@
-# 量化交易入门：XQuant Beginner
+# 人人都是量化交易员：XQuant Beginner 量化交易入门
 
 《XQuant：人人都是量化交易员》开源书稿。
 

@@ -36,6 +36,9 @@ jobs:
         env:
           VITEPRESS_BASE: /xquant-beginner/
 
+      - name: Check SEO metadata
+        run: npm run seo:check
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

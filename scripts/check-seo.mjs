@@ -1,7 +1,13 @@
-import { readFileSync, existsSync } from 'node:fs'
+import { readFileSync, existsSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 
 const distDir = join(process.cwd(), '.vitepress', 'dist')
+const bookDir = join(process.cwd(), 'book')
+
+function hasFrontmatterField(markdown, field) {
+  const match = markdown.match(/^---\n([\s\S]*?)\n---/)
+  return Boolean(match && new RegExp(`^${field}:\\s+\\S`, 'm').test(match[1]))
+}
 
 const checks = [
   {
@@ -23,7 +29,11 @@ const checks = [
     name: 'home description targets self-study and backtest intent',
     run: () => {
       const html = readFileSync(join(distDir, 'index.html'), 'utf8')
-      return html.includes('量化交易自学') && html.includes('策略回测')
+      return (
+        html.includes('人人都是量化交易员') &&
+        html.includes('量化交易自学') &&
+        html.includes('策略回测')
+      )
     }
   },
   {
@@ -45,6 +55,29 @@ const checks = [
     run: () => {
       const html = readFileSync(join(distDir, 'index.html'), 'utf8')
       return html.includes('property="og:title"') && html.includes('property="og:url"')
+    }
+  },
+  {
+    name: 'structured data targets beginner quant trading intent',
+    run: () => {
+      const html = readFileSync(join(distDir, 'index.html'), 'utf8')
+      return (
+        html.includes('application/ld+json') &&
+        html.includes('"@type":"Book"') &&
+        html.includes('人人都是量化交易员') &&
+        html.includes('量化交易入门') &&
+        html.includes('量化交易自学入门')
+      )
+    }
+  },
+  {
+    name: 'book pages have SEO title and description frontmatter',
+    run: () => {
+      const pages = readdirSync(bookDir).filter((file) => file.endsWith('.md'))
+      return pages.every((page) => {
+        const markdown = readFileSync(join(bookDir, page), 'utf8')
+        return hasFrontmatterField(markdown, 'title') && hasFrontmatterField(markdown, 'description')
+      })
     }
   }
 ]

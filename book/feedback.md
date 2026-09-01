@@ -1,3 +1,8 @@
+---
+title: XQuant Beginner 反馈与读者群
+description: 提交 XQuant Beginner 量化交易入门开源书反馈、勘误和正式书建议，加入读者群并获取课程与后续更新入口。
+---
+
 # 反馈与读者群
 
 > 最新书稿已更新至 [XQuant 量化课堂页](https://xquant.shop/courses)。

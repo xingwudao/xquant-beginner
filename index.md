@@ -1,6 +1,6 @@
 ---
-title: 量化交易入门：用 AI 和 Python 从零跑通策略回测
-description: XQuant Beginner 是面向零基础读者的量化交易自学开源书，带你用 AI 编程和 Python 从投资想法出发，完成数据获取、策略回测、风险评估、过拟合检查、交易执行和因子研究。
+title: 人人都是量化交易员：XQuant Beginner 量化交易入门
+description: 《XQuant：人人都是量化交易员》是面向零基础读者的量化交易自学开源书，带你用 AI 编程和 Python 从投资想法出发，完成数据获取、策略回测、风险评估、过拟合检查、交易执行和因子研究。
 ---
 
 # XQuant Beginner

@@ -1,9 +1,53 @@
 import { defineConfig, type HeadConfig } from 'vitepress'
 
 const siteUrl = 'https://xingwudao.github.io/xquant-beginner/'
-const siteTitle = '量化交易入门：用 AI 和 Python 从零跑通策略回测'
+const siteTitle = '人人都是量化交易员｜XQuant Beginner 量化交易入门与自学教程'
 const siteDescription =
-  'XQuant Beginner 是面向零基础读者的量化交易自学开源书，带你用 AI 编程和 Python 从投资想法出发，完成数据获取、策略回测、风险评估、过拟合检查、交易执行和因子研究。'
+  '《XQuant：人人都是量化交易员》是面向零基础读者的量化交易自学开源书，带你用 AI 编程和 Python 从投资想法出发，完成数据获取、策略回测、风险评估、过拟合检查、交易执行和因子研究。'
+const repoUrl = 'https://github.com/xingwudao/xquant-beginner'
+const learningRepoUrl = 'https://github.com/xingwudao/xquant-learning'
+const courseUrl = 'https://xquant.shop/courses'
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Book',
+  name: 'XQuant：人人都是量化交易员',
+  alternateName: [
+    'XQuant：人人都是量化交易员',
+    '量化交易入门',
+    '量化交易自学教程'
+  ],
+  headline: siteTitle,
+  description: siteDescription,
+  inLanguage: 'zh-CN',
+  url: siteUrl,
+  isAccessibleForFree: true,
+  learningResourceType: '开源书稿',
+  keywords: [
+    '量化交易入门',
+    '量化交易自学',
+    '量化交易自学入门',
+    'Python量化交易',
+    'AI量化交易',
+    '策略回测',
+    '因子研究'
+  ],
+  author: [
+    {
+      '@type': 'Person',
+      name: '刑无刀'
+    },
+    {
+      '@type': 'Person',
+      name: 'MatrixSpk'
+    }
+  ],
+  publisher: {
+    '@type': 'Organization',
+    name: 'XQuant-Shop',
+    url: 'https://xquant.shop/'
+  },
+  sameAs: [repoUrl, learningRepoUrl, courseUrl]
+}
 
 function pageToUrl(page: string) {
   const route = page
@@ -26,7 +70,7 @@ function property(property: string, content: string): HeadConfig {
 export default defineConfig({
   lang: 'zh-CN',
   title: 'XQuant Beginner',
-  titleTemplate: ':title | XQuant Beginner',
+  titleTemplate: ':title | 人人都是量化交易员 XQuant Beginner',
   description: siteDescription,
   base: process.env.VITEPRESS_BASE || '/',
   cleanUrls: true,
@@ -44,9 +88,15 @@ export default defineConfig({
     property('og:title', siteTitle),
     property('og:description', siteDescription),
     property('og:url', siteUrl),
+    property('og:image:alt', 'XQuant Beginner 量化交易入门与自学开源书'),
     meta('twitter:card', 'summary'),
     meta('twitter:title', siteTitle),
-    meta('twitter:description', siteDescription)
+    meta('twitter:description', siteDescription),
+    [
+      'script',
+      { type: 'application/ld+json' },
+      JSON.stringify(jsonLd)
+    ]
   ],
   transformHead({ page, title, description }) {
     const url = pageToUrl(page)
@@ -87,7 +137,7 @@ export default defineConfig({
       }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/xingwudao/xquant-beginner' }
+      { icon: 'github', link: repoUrl }
     ],
     outline: {
       label: '本页目录',
