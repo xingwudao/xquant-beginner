@@ -21,20 +21,20 @@
 
 开源书稿在线阅读：
 
-`https://xingwudao.github.io/xquant-beginner/`
+[https://xingwudao.github.io/xquant-beginner/](https://xingwudao.github.io/xquant-beginner/)
 
 最新书稿已更新至 XQuant 量化课堂页。想阅读最新版官方书稿，
 请前往图书页：
 
-`https://xquant.shop/courses`
+[https://xquant.shop/courses](https://xquant.shop/courses)
 
 课程、正式书和后续更新也会放在主站：
 
-`https://xquant.shop/courses`
+[https://xquant.shop/courses](https://xquant.shop/courses)
 
 如果您不会写代码、不想阅读全书，也可以看看组合商店：
 
-`https://xquant.shop/products`
+[https://xquant.shop/products](https://xquant.shop/products)
 
 ## 适合谁
 
@@ -62,7 +62,7 @@
 - 第 8 章：如何持续改进，如何监控、诊断和迭代
 - 第 9 章：量化交易的日常是什么，如何入门因子研究
 
-完整目录见 `SUMMARY.md`。
+完整目录见 [SUMMARY.md](SUMMARY.md)。
 
 ## 配套练习仓库
 
@@ -70,17 +70,17 @@
 
 书中配套的 spec 与 notebook 不放在这里，统一维护在：
 
-`https://github.com/xingwudao/xquant-learning`
+[https://github.com/xingwudao/xquant-learning](https://github.com/xingwudao/xquant-learning)
 
 阅读正文时，如果看到类似 `q1-how-to-profit/specs/` 的路径，
 请到 `xquant-learning` 仓库中查看对应文件。
 
 ## 快速入口
 
-- 在线阅读：`https://xingwudao.github.io/xquant-beginner/`
-- 课程与正式书信息：`https://xquant.shop/courses`
-- 配套练习：`https://github.com/xingwudao/xquant-learning`
-- 书稿反馈：`https://github.com/xingwudao/xquant-beginner/issues/new/choose`
+- 在线阅读：[https://xingwudao.github.io/xquant-beginner/](https://xingwudao.github.io/xquant-beginner/)
+- 课程与正式书信息：[https://xquant.shop/courses](https://xquant.shop/courses)
+- 配套练习：[https://github.com/xingwudao/xquant-learning](https://github.com/xingwudao/xquant-learning)
+- 书稿反馈：[https://github.com/xingwudao/xquant-beginner/issues/new/choose](https://github.com/xingwudao/xquant-beginner/issues/new/choose)
 - 读者群：添加作者微信 `xquanter`，备注 `XQuant 读者`
 
 ## 作者与服务
@@ -157,11 +157,11 @@ npm run seo:check
 
 如果你发现错别字、概念不清或实验结果不一致，请提交 Issue：
 
-`https://github.com/xingwudao/xquant-beginner/issues/new/choose`
+[https://github.com/xingwudao/xquant-beginner/issues/new/choose](https://github.com/xingwudao/xquant-beginner/issues/new/choose)
 
 参与反馈前建议阅读：
 
-`CONTRIBUTING.md`
+[CONTRIBUTING.md](CONTRIBUTING.md)
 
 添加作者微信 `xquanter` 进入读者群。请备注：`XQuant 读者`。
 
