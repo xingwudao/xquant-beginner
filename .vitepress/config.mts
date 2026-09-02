@@ -1,18 +1,21 @@
 import { defineConfig, type HeadConfig } from 'vitepress'
 
 const siteUrl = 'https://xingwudao.github.io/xquant-beginner/'
-const siteTitle = '人人都是量化交易员｜XQuant Beginner 量化交易入门与自学教程'
+const siteTitle =
+  'AI 量化交易入门：《人人都是量化交易员》开源书 | 用 AI 和 Python 跑通第一个策略'
 const siteDescription =
-  '《XQuant：人人都是量化交易员》是面向零基础读者的量化交易自学开源书，带你用 AI 编程和 Python 从投资想法出发，完成数据获取、策略回测、风险评估、过拟合检查、交易执行和因子研究。'
+  'AI 量化交易入门开源书：用 AI 编程工具和 Python 从零跑通策略回测、风险评估与因子研究'
 const repoUrl = 'https://github.com/xingwudao/xquant-beginner'
 const learningRepoUrl = 'https://github.com/xingwudao/xquant-learning'
 const courseUrl = 'https://xquant.shop/courses'
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Book',
-  name: 'XQuant：人人都是量化交易员',
+  name: 'AI 量化交易入门：《人人都是量化交易员》',
   alternateName: [
     'XQuant：人人都是量化交易员',
+    'AI 量化交易入门',
+    'Vibe Coding 量化交易入门',
     '量化交易入门',
     '量化交易自学教程'
   ],
@@ -23,6 +26,10 @@ const jsonLd = {
   isAccessibleForFree: true,
   learningResourceType: '开源书稿',
   keywords: [
+    'AI 量化交易入门',
+    'AI 量化交易',
+    'Vibe Coding',
+    'AI 编程工具',
     '量化交易入门',
     '量化交易自学',
     '量化交易自学入门',
@@ -70,7 +77,7 @@ function property(property: string, content: string): HeadConfig {
 export default defineConfig({
   lang: 'zh-CN',
   title: 'XQuant Beginner',
-  titleTemplate: ':title | 人人都是量化交易员 XQuant Beginner',
+  titleTemplate: ':title | 人人都是量化交易员',
   description: siteDescription,
   base: process.env.VITEPRESS_BASE || '/',
   cleanUrls: true,
@@ -80,15 +87,15 @@ export default defineConfig({
   },
   head: [
     meta('author', '刑无刀, MatrixSpk'),
-    meta('keywords', '量化交易入门, 量化交易自学, Python量化交易, AI量化交易, 策略回测, 因子研究, open-xquant'),
+    meta('keywords', 'AI 量化交易入门, AI 量化交易, Vibe Coding, AI 编程工具, Python 量化交易, 策略回测, 风险评估, 因子研究, open-xquant'),
     meta('theme-color', '#2563eb'),
-    property('og:site_name', 'XQuant Beginner'),
+    property('og:site_name', 'AI 量化入门 · XQuant Beginner'),
     property('og:type', 'book'),
     property('og:locale', 'zh_CN'),
     property('og:title', siteTitle),
     property('og:description', siteDescription),
     property('og:url', siteUrl),
-    property('og:image:alt', 'XQuant Beginner 量化交易入门与自学开源书'),
+    property('og:image:alt', 'AI 量化交易入门《人人都是量化交易员》开源书'),
     meta('twitter:card', 'summary'),
     meta('twitter:title', siteTitle),
     meta('twitter:description', siteDescription),
