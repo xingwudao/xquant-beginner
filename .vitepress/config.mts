@@ -82,6 +82,7 @@ export default defineConfig({
   base: process.env.VITEPRESS_BASE || '/',
   cleanUrls: true,
   lastUpdated: true,
+  appearance: true,
   sitemap: {
     hostname: siteUrl
   },
