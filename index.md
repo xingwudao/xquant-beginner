@@ -25,6 +25,12 @@ Vibe Coding（氛围编程）的学习方式：你不需要先成为程序员，
 > 最新书稿已更新至 [XQuant 量化课堂页](https://xquant.shop/courses)。
 > 想阅读最新版官方书稿，请前往图书页。
 
+## 视频讲解版
+
+本开源书已推出[视频讲解版](https://xquant.shop/courses/programs/10253c42-f973-4a77-859d-c0a4b95a99ed)，
+由作者亲自演示和讲解。加入课程后，还可以进入作者群聊，
+与作者直接交流。
+
 ## 先从这里开始
 
 - [前言](book/preface.md)：理解这本书的学习路径
