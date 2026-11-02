@@ -42,7 +42,7 @@
 
 ## 视频讲解版
 
-本开源书已推出[视频讲解版](https://xquant.shop/courses/programs/10253c42-f973-4a77-859d-c0a4b95a99ed)，
+本开源书已推出[视频讲解版](https://xquant.shop/courses/programs/10253c42-f973-4a77-859d-c0a4b95a99ed?channel=cp_3514398a014_af292d15527)，
 由作者亲自演示和讲解。加入课程后，还可以进入作者群聊，
 与作者直接交流。
 
